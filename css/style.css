@@ -21,8 +21,24 @@ p {
 
 }
 
+label {
+    color: #000;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
 /* ////////////////////////////////////////////////////// Create an account style start /////////////////////// */
-.center-profile,.Center-Administration-details {
+.center-profile,
+.Center-Administration-details,
+.Exam-Infrastructure-details-section,
+.Bank-Account-details-section {
     background-color: #f9f9f9;
 }
 
@@ -71,12 +87,14 @@ p {
     background-color: #fff;
     margin-top: 30px;
 }
-.center-profile-indecater{
+
+.center-profile-indecater {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.center-profile-indecater div{
+
+.center-profile-indecater div {
     width: 20px;
     height: 20px;
     background-color: #DDDDDD;
@@ -89,11 +107,12 @@ p {
 
 
 /*///////////////////////////////////// Verify your phone number section style start /////////////////////////*/
-.text-wrapper p span{
+.text-wrapper p span {
     color: #000;
     font-weight: bold;
 }
-.form-wrapper-phone-number input{
+
+.form-wrapper-phone-number input {
     width: 65px;
     height: 60px;
     padding: 10px;
@@ -108,18 +127,22 @@ p {
     text-align: center;
 
 }
+
 .form-wrapper-phone-number input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.Create_phone_number{
+
+.Create_phone_number {
     height: 100vh;
 }
-.first-indicator{
+
+.first-indicator {
     background-color: #000 !important;
 }
-.first-center-profile-indecator{
+
+.first-center-profile-indecator {
     width: 50px !important;
     height: 20px !important;
     border-radius: 20px !important;
@@ -135,7 +158,8 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.form-wrapper-M-pin input{
+
+.form-wrapper-M-pin input {
     width: 80px;
     height: 70px;
     padding: 10px;
@@ -149,16 +173,19 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: bolder;
     text-align: center;
 }
+
 /* /////////////////////////////////// M-pin section style end ////////////////////////////////////////////// */
 
 /* //////////////////////////////////// center details style start //////////////////////////////////////// */
-.center-details-section{
+.center-details-section {
     background-color: #f9f9f9;
 }
-.border-shadow{
-    box-shadow: 0px 1px 10px 0px #00000021;  
+
+.border-shadow {
+    box-shadow: 0px 1px 10px 0px #00000021;
 }
-.intro-tab{
+
+.intro-tab {
     text-align: center;
     padding: 5px 0px;
     border-radius: 10px;
@@ -166,24 +193,59 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid #DFDFDF;
 
 }
-.center-details-form input{
+
+.center-details-form input {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #DFDFDF;
 }
-.center-details-form input[type="radio"]{
+
+.center-details-form input[type="radio"] {
     width: 50px;
 }
-.radio-container{
+
+.radio-container {
     border: 1px solid #DFDFDF;
     padding: 10px 0;
     border-radius: 10px;
     background-color: #fff;
 
 }
-.Previous-btn{
+
+.Previous-btn {
     background-color: #f9f9f9 !important;
 }
+
 /* //////////////////////////////////// center details style end   ///////////////////////////////////////// */
 
+
+/* ///////////////////////////////// Exam Infrastructure details section style start /////////////////////////*/
+
+.network-option {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.save-btn {
+    width: 75%;
+    margin-left: 15px;
+}
+
+/* ///////////////////////////////// Exam Infrastructure details section style end /////////////////////////*/
+
+
+/* ///////////////////////////////// Bank Account details section style start //////////////////////////// */
+.gst-state-code-wrapper {
+    border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.gst-state-code-wrapper input {
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* ///////////////////////////////// Bank Account details section style end //////////////////////////// */
