@@ -8,21 +8,39 @@
 }
 
 h2 {
-    font-family: Karla;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    color: #000000;
+}
+h3{
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #000000;
+
 }
 
 p {
-    font-family: Karla;
-    font-weight: 500;
-    font-size: 16px;
+    
+    font-weight: 500 !important;
+    font-size: 16px !important;
     color: #737373;
 
+}
+a{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
 }
 
 label {
     color: #000;
+}
+.need-help{
+    color:#DFDFDF !important;
+    background: #000000 !important;
+    border-radius: 10px !important;
+    padding: 5px 10px;
+
 }
 
 .page {
@@ -33,6 +51,65 @@ label {
     display: block;
 }
 
+/* ////////////////// slider start ////////////////////////////////*/
+.testimonial-box {
+    /* width: 400px; */
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-img-box {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.8s ease-in-out;
+}
+
+
+.testimonial-text-box {
+    padding: 20px;
+}
+
+.text-center h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.text-center p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Indicators */
+.center-profile-indecater {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.center-profile-indecater div {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background 0.5s;
+}
+
+.center-profile-indecater .active {
+    background-color: #3498db;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #000;
+}
+/* /////////////////  slider end ///////////////////////////////*/
 
 /* ////////////////////////////////////////////////////// Create an account style start /////////////////////// */
 .center-profile,
@@ -42,7 +119,10 @@ label {
     background-color: #f9f9f9;
 }
 
-
+.back-to-website{
+   border: 1px solid #DFDFDF !important;
+   border-radius: 10px !important;
+}
 .form-wrapper input,
 .country-code {
     background-color: #f9f9f9;
@@ -75,17 +155,10 @@ label {
 }
 
 .testimonial-img-box {
-    width: 400px;
+    width: 100%;
     height: 300px;
     background-color: #fff;
 
-}
-
-.testimonial-text-box {
-    width: 400px;
-    height: 50px;
-    background-color: #fff;
-    margin-top: 30px;
 }
 
 .center-profile-indecater {
@@ -101,8 +174,9 @@ label {
     border-radius: 50%;
     margin: 0px 10px;
 }
-
-
+.border.stepFilled{
+    border: 1px solid red !important;
+}
 /* ////////////////////////////////////////////////////// Create an account style end /////////////////////// */
 
 
@@ -216,7 +290,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .Previous-btn {
     background-color: #f9f9f9 !important;
 }
-
+.formStep{
+    display: none !important;
+}
+.formStep.show{
+    display: block !important;
+}
 /* //////////////////////////////////// center details style end   ///////////////////////////////////////// */
 
 
@@ -230,7 +309,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .save-btn {
-    width: 75%;
+    width: 81%;
     margin-left: 15px;
 }
 
@@ -249,3 +328,44 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* ///////////////////////////////// Bank Account details section style end //////////////////////////// */
+
+
+/* ///////////////////////////////// pop-Up style start ////////////////////////////////////////// */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Default hidden */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up box */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+/* Close button */
+.close-btn {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* ///////////////////////////////// pop-Up style end ///////////////////////////////////////// */
+.newLabWrapper{
+    display: none;
+}
+.newLabWrapper.show{
+    display: block;
+}
