@@ -175,7 +175,8 @@ label {
     margin: 0px 10px;
 }
 .border.stepFilled{
-    border: 1px solid red !important;
+    background-color: #f9f9f9;
+    border: 1px solid #F9F9F9;
 }
 /* ////////////////////////////////////////////////////// Create an account style end /////////////////////// */
 
@@ -312,6 +313,17 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 81%;
     margin-left: 15px;
 }
+.Edit-btn{
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    text-align: center;
+    background-color: #F9F9F9;
+    margin: 0;
+    padding:10px;
+    border-radius: 10px;
+
+}
+
 
 /* ///////////////////////////////// Exam Infrastructure details section style end /////////////////////////*/
 

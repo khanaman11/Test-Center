@@ -47,7 +47,7 @@ createSlider("slider3", [
     "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
 ], ".sliderIndicator3");
 
-createSlider("slider3", [
+createSlider("slider4", [
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
     "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
     "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
