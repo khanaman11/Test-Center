@@ -2,13 +2,13 @@
 // ////////////////////////// Pagr next and Previous script start //////////////////////////////////////////
 
 function showPage(pageNumber) {
-    // Sab pages hide kar do
-    document.querySelectorAll(".page").forEach(page => {
-        page.classList.remove("active");
-    });
+  // Sab pages hide kar do
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.remove("active");
+  });
 
-    // Sirf current page dikhana hai
-    document.getElementById(`page${pageNumber}`).classList.add("active");
+  // Sirf current page dikhana hai
+  document.getElementById(`page${pageNumber}`).classList.add("active");
 }
 
 // ////////////////////////// Pagr next and Previous script end //////////////////////////////////////////
@@ -17,40 +17,40 @@ function showPage(pageNumber) {
 // ///////////////////////////////////// slider script start ///////////////////////////////////////////
 
 function createSlider(sliderId, images, indicatorClass) {
-    const slider = document.getElementById(sliderId);
-    const indicators = document.querySelectorAll(`${indicatorClass} div`);
-    let index = 0;
-    function changeSlide() {
-        slider.style.backgroundImage = `url('${images[index]}')`;
-        indicators.forEach(ind => ind.classList.remove("active"));
-        indicators[index].classList.add("active");
-        index = (index + 1) % images.length;
-    }
-    setInterval(changeSlide, 3000);
-    changeSlide();
+  const slider = document.getElementById(sliderId);
+  const indicators = document.querySelectorAll(`${indicatorClass} div`);
+  let index = 0;
+  function changeSlide() {
+    slider.style.backgroundImage = `url('${images[index]}')`;
+    indicators.forEach(ind => ind.classList.remove("active"));
+    indicators[index].classList.add("active");
+    index = (index + 1) % images.length;
+  }
+  setInterval(changeSlide, 3000);
+  changeSlide();
 }
 createSlider("slider1", [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
-    "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
-    "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
+  "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
+  "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
 ], ".sliderIndicator1");
 
 createSlider("slider2", [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
-    "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
-    "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
+  "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
+  "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
 ], ".sliderIndicator2");
 
 createSlider("slider3", [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
-    "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
-    "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
+  "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
+  "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
 ], ".sliderIndicator3");
 
 createSlider("slider4", [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
-    "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
-    "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSguMMxq75VndXQlhJQgKRLSwcTnLAaYXryw&s",
+  "https://5.imimg.com/data5/QP/KK/MY-30533217/online-exam-center-creations.jpg",
+  "https://img.freepik.com/free-photo/woman-with-super-gesture-university-lecture_23-2147679176.jpg?t=st=1739945557~exp=1739949157~hmac=d93da0b90eab75ebc5c11f0e6b0ce526ae98f58159bd0109f28bfbfdf2fc9e3a&w=740"
 ], ".sliderIndicator4");
 
 // ///////////////////////////////////////// slider script end ///////////////////////////////////////////
@@ -58,10 +58,10 @@ createSlider("slider4", [
 
 // //////////////////////////////////////// open pop-Up script start /////////////////////////////////////////
 function openPopup() {
-    document.getElementById("popup").style.display = "flex";
+  document.getElementById("popup").style.display = "flex";
 }
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+  document.getElementById("popup").style.display = "none";
 }
 // ///////////////////////////////////////  open pop-Up script start ////////////////////////////////////////
 const formItems = document.querySelectorAll(".formStep");
@@ -118,7 +118,14 @@ addNewLabBtn.forEach(btn => {
     newLabWrapper.classList.add("show");
   });
 });
-saveBtn.addEventListener("click",()=>{
-    editBtnWrapper.classList.remove("d-none")
-    saveBtnWrapper.classList.add("d-none")
+saveBtn.addEventListener("click", () => {
+  editBtnWrapper.classList.remove("d-none")
+  saveBtnWrapper.classList.add("d-none")
 })
+
+
+// //////////////////// my-booking section start///////////////////
+
+
+// //////////////////// my-booking section end///////////////////
+

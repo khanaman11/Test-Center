@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestCenter_project</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./asserts/logo.png">
+</head>
+
+<body>
+
+    <!-- ///////////////////////////////////// My Bookings section start ///////////////////////////////////-->
+    <div class="My-booking-section" id="booking">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 p-0">
+                    <div class="aside-section">
+                        <div class="aside-heading">
+                            <h3 class="m-0">BookMyTestCenter</h3>
+                        </div>
+                        <ul class="aside-list">
+                            <p>Genral</p>
+                            <li><a href="#" class="active-link"><img src="./asserts/white-circle.png" alt=""
+                                        class="me-2">My Bookings</a></li>
+                            <li><a href="#"><img src="./asserts/Calendar.png" alt="" class="me-2">My Centers</a></li>
+                            <li><a href="#"><img src="./asserts/Calendar.png" alt="" class="me-2">My Calendar</a></li>
+                            <p class="mt-3">support</p>
+                            <li>
+                                <a href="#"> <img src="./asserts/setting-icon.png" alt="" class="me-2">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./asserts/help-icon.png" alt="" class="me-2">Help & Support</a>
+                            </li>
+                        </ul>
+                        <div class="company-wrapper">
+                            <div class="company-add">
+                                <div class="p-1">
+                                    <img src="./asserts/coffee-logo.png" alt="">
+                                </div>
+                                <div class="comp-heading p-1">
+                                    <h3 class="m-0">LTTV Group</h3>
+                                    <p class="m-0">msharma@lttv.com</p>
+                                </div>
+                                <div class="p-1">
+                                    <img src="./asserts/dout-icon.png" alt="">
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="founding">@2016 | Testpan India Private Limited</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-10 p-0 ">
+                    <div class="container-wrapper">
+                        <div class="my-booking-wrapper">
+                            <div class="my-booking-header ps-4">
+                                <h2 class="m-0 fs-3">My Bookings</h2>
+                                <span>/ Booking Requests</span>
+                            </div>
+                        </div>
+                        <!-- ///////////////////////////////////////// Modal -->
+                        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold">Bar Council Exam</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6 class="fw-semibold">01: Project Details</h6>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Exam Date</label>
+                                            <input type="text" class="form-control" value="Mar 3rd - 4th, 2025"
+                                                readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Exam Category</label>
+                                            <input type="text" class="form-control" value="Government" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Exam City</label>
+                                            <input type="text" class="form-control" value="Delhi" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Seats</label>
+                                            <input type="text" class="form-control" value="470" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">From</label>
+                                            <input type="text" class="form-control" value="Testpan India" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Pricing</label>
+                                            <input type="text" class="form-control" value="Rs. 60 / seat" readonly>
+                                        </div>
+
+                                        <h6 class="fw-semibold mt-4">02: Software & Hardware Requirements</h6>
+                                        <div class="form-group">
+                                            <label class="form-label">Exam Mode</label>
+                                            <input type="text" class="form-control" value="Internet based" readonly>
+                                        </div>
+
+                                        <h6 class="fw-semibold mt-4">Computer Configuration</h6>
+                                        <div class="form-group">
+                                            <label class="form-label">Operating System</label>
+                                            <input type="text" class="form-control" value="Windows 10" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">RAM</label>
+                                            <input type="text" class="form-control" value="4 GB" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Processor</label>
+                                            <input type="text" class="form-control" value="i7, 10th Gen" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Display Resolution</label>
+                                            <input type="text" class="form-control" value="1200 x 800" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Internet on each device</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+
+                                        <h6 class="fw-semibold mt-4">03: Amenity Requirements</h6>
+                                        <div class="form-group">
+                                            <label class="form-label">Parking Facility</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Security Guard</label>
+                                            <input type="text" class="form-control" value="Male" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Lockers</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Waiting area</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Power Backup</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">PH Handicapped</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Printer</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Rough sheet</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Partition</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">AC in lab</label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">CCTV required </label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">Footage required </label>
+                                            <input type="text" class="form-control" value="Yes" readonly>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <button class="btn btn-danger reject-details">Reject</button>
+                                            <button class="btn btn-success accept-details">Accept</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ///////////////////////////////////// -->
+                        <div class="main-contant">
+                            <div class="my-booking-tab px-4">
+                                <a href="#">Active bookings</a>
+                                <a href="#">Booking Requests</a>
+                            </div>
+                            <div class="matrix-wrapper p-4 d-flex justify-content-between align-items-center">
+                                <div class="col-4">
+                                    <div class="matrix-box justify-content-between">
+                                        <div><img src="./asserts/Group 1073714507.png" alt=""></div>
+                                        <div class="">
+                                            <p>Total Bookings</p>
+                                            <h2>138</h2>
+                                        </div>
+                                        <div>
+                                            <select name="" id="" class="py-1 px-2 border rounded-pill">
+                                                <option value="">1Y</option>
+                                                <option value="">2Y</option>
+                                                <option value="">3Y</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="matrix-box justify-content-between mx-3">
+                                        <div><img src="./asserts/seets-books.png" alt=""></div>
+                                        <div class="">
+                                            <p>Seats booked</p>
+                                            <h2>62.1k</h2>
+                                        </div>
+                                        <div>
+                                            <select name="" id="" class="border rounded-pill px-2 py-1">
+                                                <option value="">1Y</option>
+                                                <option value="">2Y</option>
+                                                <option value="">3Y</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-4">
+                                    <div class="matrix-box">
+                                        <div class="custom-booking-btn-box">
+                                            <button class="w-100 mb-2 custom-btn">Add custom booking</button>
+                                            <button class="w-100 center-profile-btn">Edit Center profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-wrapper px-4">
+                                <div class="table-container">
+                                    <div class="table-header">
+                                        <div class="table-input"><img src="./asserts/search.png" alt=""><input
+                                                type="text" placeholder="Enter exam name.."></div>
+                                        <div>
+                                            <select name="" id="" class="p-2 me-4 border rounded">
+                                                <option value="">Filter by</option>
+                                                <option value="">Filter by1</option>
+                                                <option value="">Filter by2</option>
+                                            </select>
+                                            <button class="py-2 px-3 border rounded bg-dark text-white">Export <img
+                                                    src="./asserts/Download.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th> <input type="checkbox" class="me-2">Exam name</th>
+                                                <th>From</th>
+                                                <th>Duration</th>
+                                                <th>Exam Date</th>
+                                                <th>Seats</th>
+                                                <th>Pricing </th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="pending"><img src="./asserts/panding-icon.png"
+                                                            alt="" class="me-2">pending</a></td>
+                                                <td><a href="#" class="View-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#bookingModal">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="pending"><img src="./asserts/panding-icon.png"
+                                                            alt="" class="me-2">pending</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="rejected "><img src="./asserts/reject-icon.png"
+                                                            alt="" class="me-2">Rejected</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="accepted"><img src="./asserts/accept-icon.png"
+                                                            alt="" class="me-2">pending</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="accepted"><img src="./asserts/accept-icon.png"
+                                                            alt="" class="me-2">pending</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="py-4 d-flex justify-content-between align-items-center">
+                                    <div class="border p-2 rounded"><img src="./asserts/Line 175.png" alt="">Previous
+                                    </div>
+                                    <div>Page 1 of 3</div>
+                                    <div class="border p-2 rounded">Next <img src="./asserts/right-arrow.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 p-0 d-none">
+                    <div class="container-wrapper">
+                        <div class="my-booking-wrapper">
+                            <div class="my-booking-header ps-4">
+                                <h2 class="m-0 fs-3">My Bookings</h2>
+                                <span>/ Booking Requests</span>
+
+                            </div>
+                        </div>
+                        <div class="main-contant">
+                            <div class="my-booking-tab px-4">
+                                <a href="#">Active bookings</a>
+                                <a href="#">Booking Requests</a>
+                            </div>
+                            <div class="matrix-wrapper p-4 d-flex justify-content-between align-items-center">
+                                <div class="col-4">
+                                    <div class="matrix-box justify-content-between">
+                                        <div><img src="./asserts/Group 1073714507.png" alt=""></div>
+                                        <div class="">
+                                            <p>Total Bookings</p>
+                                            <h2>138</h2>
+                                        </div>
+                                        <div>
+                                            <select name="" id="" class="py-1 px-2 border rounded-pill">
+                                                <option value="">1Y</option>
+                                                <option value="">2Y</option>
+                                                <option value="">3Y</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="matrix-box justify-content-between mx-3">
+                                        <div><img src="./asserts/seets-books.png" alt=""></div>
+                                        <div class="">
+                                            <p>Seats booked</p>
+                                            <h2>62.1k</h2>
+                                        </div>
+                                        <div>
+                                            <select name="" id="" class="border rounded-pill px-2 py-1">
+                                                <option value="">1Y</option>
+                                                <option value="">2Y</option>
+                                                <option value="">3Y</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-4">
+                                    <div class="matrix-box">
+                                        <div class="custom-booking-btn-box">
+                                            <button class="w-100 mb-2 custom-btn">Add custom booking</button>
+                                            <button class="w-100 center-profile-btn">Edit Center profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-wrapper px-4">
+                                <div class="table-container">
+                                    <div class="table-header">
+                                        <div class="table-input"><img src="./asserts/search.png" alt=""><input
+                                                type="text" placeholder="Enter exam name.."></div>
+                                        <div>
+                                            <select name="" id="" class="p-2 me-4 border rounded">
+                                                <option value="">Filter by</option>
+                                                <option value="">Filter by1</option>
+                                                <option value="">Filter by2</option>
+                                            </select>
+                                            <button class="py-2 px-3 border rounded bg-dark text-white">Export <img
+                                                    src="./asserts/Download.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th> <input type="checkbox" class="me-2">Exam name</th>
+                                                <th>From</th>
+                                                <th>Duration</th>
+                                                <th>Exam Date</th>
+                                                <th>Seats</th>
+                                                <th>Pricing </th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="accepted"><img src="./asserts/accept-icon.png"
+                                                            alt="" class="me-2">Accepted</a></td>
+                                                <td><a href="#" class="View-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#bookingModal">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="pending"><img src="./asserts/panding-icon.png"
+                                                            alt="" class="me-2">pending</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="rejected "><img src="./asserts/reject-icon.png"
+                                                            alt="" class="me-2">Rejected</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="accepted"><img src="./asserts/accept-icon.png"
+                                                            alt="" class="me-2">Accepted</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="me-2">Bar Council</td>
+                                                <td>Testpan India</td>
+                                                <td>2 days</td>
+                                                <td>Mar 3th - 4th, 2025</td>
+                                                <td>470</td>
+                                                <td>Rs. 60/seat</td>
+                                                <td><a href="#" class="accepted"><img src="./asserts/accept-icon.png"
+                                                            alt="" class="me-2">Accepted</a></td>
+                                                <td><a href="#" class="View-btn">View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="py-4 d-flex justify-content-between align-items-center">
+                                    <div class="border p-2 rounded"><img src="./asserts/Line 175.png" alt="">Previous
+                                    </div>
+                                    <div>Page 1 of 3</div>
+                                    <div class="border p-2 rounded">Next <img src="./asserts/right-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ///////////////////////////////////// My Bookings section end -->
+
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

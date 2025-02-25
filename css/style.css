@@ -12,7 +12,8 @@ h2 {
     font-size: 36px !important;
     color: #000000;
 }
-h3{
+
+h3 {
     font-size: 18px !important;
     font-weight: 600 !important;
     color: #000000;
@@ -20,13 +21,14 @@ h3{
 }
 
 p {
-    
+
     font-weight: 500 !important;
     font-size: 16px !important;
     color: #737373;
 
 }
-a{
+
+a {
     font-size: 14px !important;
     font-weight: 500 !important;
     color: #000000 !important;
@@ -35,8 +37,9 @@ a{
 label {
     color: #000;
 }
-.need-help{
-    color:#DFDFDF !important;
+
+.need-help {
+    color: #DFDFDF !important;
     background: #000000 !important;
     border-radius: 10px !important;
     padding: 5px 10px;
@@ -109,6 +112,7 @@ label {
     border-radius: 20px;
     background-color: #000;
 }
+
 /* /////////////////  slider end ///////////////////////////////*/
 
 /* ////////////////////////////////////////////////////// Create an account style start /////////////////////// */
@@ -119,10 +123,11 @@ label {
     background-color: #f9f9f9;
 }
 
-.back-to-website{
-   border: 1px solid #DFDFDF !important;
-   border-radius: 10px !important;
+.back-to-website {
+    border: 1px solid #DFDFDF !important;
+    border-radius: 10px !important;
 }
+
 .form-wrapper input,
 .country-code {
     background-color: #f9f9f9;
@@ -174,10 +179,12 @@ label {
     border-radius: 50%;
     margin: 0px 10px;
 }
-.border.stepFilled{
+
+.border.stepFilled {
     background-color: #f9f9f9;
     border: 1px solid #F9F9F9;
 }
+
 /* ////////////////////////////////////////////////////// Create an account style end /////////////////////// */
 
 
@@ -291,12 +298,15 @@ input[type="number"]::-webkit-outer-spin-button {
 .Previous-btn {
     background-color: #f9f9f9 !important;
 }
-.formStep{
+
+.formStep {
     display: none !important;
 }
-.formStep.show{
+
+.formStep.show {
     display: block !important;
 }
+
 /* //////////////////////////////////// center details style end   ///////////////////////////////////////// */
 
 
@@ -313,13 +323,14 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 81%;
     margin-left: 15px;
 }
-.Edit-btn{
+
+.Edit-btn {
     border: 1px solid #DDDDDD;
     width: 100%;
     text-align: center;
     background-color: #F9F9F9;
     margin: 0;
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
 
 }
@@ -350,12 +361,12 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: none; /* Default hidden */
+    display: none;
+    /* Default hidden */
     justify-content: center;
     align-items: center;
 }
 
-/* Pop-up box */
 .popup-content {
     background: white;
     padding: 20px;
@@ -364,7 +375,6 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 50%;
 }
 
-/* Close button */
 .close-btn {
     background: #000000;
     color: white;
@@ -374,10 +384,268 @@ input[type="number"]::-webkit-outer-spin-button {
     cursor: pointer;
     border-radius: 10px;
 }
+
+.popup-content a {
+    display: inline-block;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* ///////////////////////////////// pop-Up style end ///////////////////////////////////////// */
-.newLabWrapper{
+.newLabWrapper {
     display: none;
 }
-.newLabWrapper.show{
+
+.newLabWrapper.show {
     display: block;
+}
+
+
+/* /////////////////////////////////////// my booking style start /////////////////////////////////*/
+.aside-section {
+    border-right: 1px solid #DDDDDD;
+    height: 100vh;
+    position: relative;
+}
+
+.aside-heading {
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 21px 0px;
+}
+
+.aside-list {
+    padding: 30px;
+    margin: 0;
+    list-style: none;
+}
+
+.aside-list li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.active-link {
+    background-color: #000000;
+    color: #fff !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.company-wrapper {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+}
+
+.company-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.founding {
+    font-size: 10px !important;
+    text-align: center;
+}
+
+.comp-heading h3 {
+    font-size: 10px;
+}
+
+.comp-heading p {
+    font-size: 10px;
+}
+
+.my-booking-wrapper {
+    flex: 1;
+}
+
+.my-booking-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 15px 0px;
+    background-color: #fff;
+}
+
+.my-booking-tab {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.my-booking-tab a {
+    margin-right: 40px;
+    text-decoration: none;
+    padding: 20px 0px;
+    display: inline-block;
+}
+
+.my-booking-tab a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.main-contant {
+    background-color: #f9f9f9;
+
+}
+
+.container-wrapper {
+    height: 100vh;
+    overflow: auto;
+}
+
+.matrix-box {
+    border: 1px solid #f9f9f9;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #DDDDDD;
+    background-color: #fff;
+    display: flex;
+}
+
+.custom-booking-btn-box button {
+    padding: 8px 0px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+.custom-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.center-profile-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.table-container {
+    border-radius: 10px;
+    border: 1px solid #DDDDDD;
+
+
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.table-input {
+    position: relative;
+}
+
+.table-input input {
+    padding: 5px 35px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.table-input img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    border: 1px solid #DDDDDD;
+}
+
+td,
+th {
+    padding: 20px;
+}
+
+.pending {
+    background: #FEFFBD;
+    color: #909229 !important;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.rejected {
+    background: #ED0A0A1A;
+    color: #ED0A0A !important;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.accepted {
+    background: #CAFFBD;
+    color: #3F892C !important;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.View-btn {
+    padding: 6px 16px;
+    background-color: #000;
+    color: #fff !important;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*////////////////////////////////////// my booking style end //////////////////////////////////*/
+
+/* Custom CSS for modal */
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 553px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    overflow-y: auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    width: 40%;
+    /* Adjust width of label */
+    font-weight: bold;
+}
+
+.form-control {
+    width: 60%;
+    /* Adjust width of input */
+}
+
+.reject-details {
+    width: 150px;
+}
+
+.accept-details {
+    width: 315px;
+    margin-left: 10px;
 }
