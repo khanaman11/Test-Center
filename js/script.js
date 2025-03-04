@@ -126,6 +126,31 @@ saveBtn.addEventListener("click", () => {
 
 // //////////////////// my-booking section start///////////////////
 
+function changeTab(index) {
+  let tabs = document.querySelectorAll('.booking-tab');
+  let contents = document.querySelectorAll('.center');
 
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    contents[i].classList.toggle('active', i === index);
+  });
+}
 // //////////////////// my-booking section end///////////////////
+
+
+// ////////////////////////////// Aside script start ///////////////////
+
+function openCenterBooking(index) {
+  let asideLink = document.querySelectorAll('.link');
+  let bookCenter = document.querySelectorAll('.booking-center');
+
+  asideLink.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    bookCenter[i].classList.toggle('active', i === index);
+  });
+}
+
+// /////////////////////////// Aside script end ///////////////////////
+
+
 
